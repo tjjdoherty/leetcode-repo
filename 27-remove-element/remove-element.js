@@ -7,7 +7,7 @@ var removeElement = function(nums, val) {
     let i = 0;
     for (let j = 0; j < nums.length; j++) {
         if (nums[j] !== val) {
-            nums[i] = nums[j];
+            nums[i] = nums[j]; // overwrite the original array, putting non-val at the front
             i++;
         }
     }
